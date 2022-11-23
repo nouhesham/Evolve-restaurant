@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": "E:/JAVascript/starter"
+	},
+	{
+		"path": "E:/JAVascript"
+	},
+	{
+		"path": "E:/JAVascript/06-Modal"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "JAVascript"
+  }
+}

@@ -1,0 +1,427 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 400px;
+  }
+
+  to {
+    margin-left: 2%;
+    width: 400px;
+  }
+}
+:root {
+  --main-color: #80008;
+  --padding: 20px;
+  --margin: 20px;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background-image: url(../images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+/* .container {
+  width: 90%;
+  margin: auto;
+/* } * */
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.header .container img {
+  width: 100px;
+  height: 100px;
+}
+
+.header {
+  background-image: url(../images/lily-banse--YHSwy6uqvk-unsplash.jpg);
+  width: auto;
+  height: 700px;
+  background-size: cover;
+  position: relative;
+}
+.header .container .text {
+  display: block;
+}
+
+.header .container .links {
+  /* color: white; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+a {
+  margin: var(--margin);
+  padding: var(--padding);
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  font-size: 20px;
+  color: yellow;
+  transition-duration: 0.2s;
+}
+
+.header .container .text {
+  background: linear-gradient(180deg, yellow 10%, white 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  right: 10px;
+  /* transform: translate(-50%, -50%); */
+  font-size: 70px;
+  width: 400px;
+  margin-right: 100px;
+  box-shadow: 5px 5px 10px white;
+  transition: transform 1s;
+}
+.header .container .text:hover {
+  transform: translate(20px);
+}
+.header .container .showmodel {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.header .container .info {
+  display: none;
+  /* width: 300px; */
+  background-color: #008080;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 5px 10px white;
+  width: 500px;
+  height: 250px;
+  padding: var(--padding);
+}
+#icon {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+h1 {
+  background: linear-gradient(180deg, #ff00ff, white 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.header .container .info p {
+  line-height: 2rem;
+  font-style: italic;
+}
+
+.blur {
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  display: none;
+  z-index: 1;
+}
+
+.special-heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--padding);
+}
+.special-heading h2 {
+  font-size: 60px;
+  letter-spacing: 0.5rem;
+  font-style: oblique;
+  background: linear-gradient(180deg, #ff00ff, black 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+  font-family: serif;
+}
+.special-heading h2:hover {
+  transform: translate(10px, 10px);
+}
+
+.special-heading img {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.container .plates .grid-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.grid-sections h2:nth-child(2) {
+  color: #a36ab6;
+
+  width: 300px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  animation-name: slidein;
+  animation-duration: 3s;
+  cursor: pointer;
+}
+.grid-sections p {
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  width: 300px;
+  font-weight: bold;
+}
+.grid-sections p:hover {
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  width: 300px;
+  font-weight: bold;
+}
+
+/* .thirdsection h2 {
+  color: blue;
+} */
+.plates .freepik {
+  width: 280px;
+  height: 350px;
+  border-radius: 1rem;
+}
+.grid-sections img:hover {
+  transform: translate(0, -10px);
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 10px purple;
+}
+.special-heading .icon {
+  font-size: 40px;
+  margin-top: 60px;
+}
+.drinks-sections {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.drinks-sections .imagedrink {
+  /* width: 700px; */
+
+  width: calc(100% - 70px);
+  height: 350px;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 30px #ff00ff;
+  margin-bottom: 30px;
+}
+.drinks-sections .imagedrink:hover {
+  box-shadow: 20px 10px 10px #a36ab6;
+  transform: translate(20px, -10px);
+}
+
+.drinks .drinks-info {
+  color: purple;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: fantasy;
+  font-style: italic;
+  font-size: 25px;
+}
+.drinksimage {
+  width: 400px;
+  height: 300px;
+  box-shadow: 5px rgb(134, 243, 120);
+  box-shadow: 10px 5px 5px royalblue;
+  border-radius: 40px;
+  margin-top: 20px;
+  animation-name: slidein;
+  animation-duration: 6s;
+}
+.drinksimage:hover {
+  transform: translate(10px, 10px);
+}
+.slide {
+  animation-name: slidein;
+  animation-duration: 6s;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+
+  font-weight: bold;
+  color: #008080;
+}
+.drinksgrid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.headingforhealthy {
+  background-image: url(../images/healthy-lunch-go-packed-lunch-box.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  /* text-align: center;
+  justify-content: center; */
+  margin-top: var(--margin);
+  border-radius: 5px 5px 5px white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+#health {
+  background: linear-gradient(90deg, #ff00ff, black 75%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 10px;
+  font-family: serif;
+  font-size: 100px;
+  margin-left: 30px;
+  width: 350px;
+  padding-top: 30px;
+  line-height: 1.2em;
+  letter-spacing: 0.2em;
+}
+#health:hover {
+  transform: translate(20px);
+}
+.healthyplates {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.plate1,
+.plate2 {
+  margin: 40px;
+  padding: 50px;
+  text-align: center;
+}
+.healthyplates p {
+  font-family: serif;
+  font-size: 25px;
+  line-height: 3rem;
+  color: purple;
+  letter-spacing: 0.1em;
+  width: 500px;
+}
+.healthyplates .healthyheading {
+  color: blue;
+  font-style: italic;
+  padding: 10px;
+}
+.plate1 .healthyheading:hover,
+.plate2 .healthyheading:hover {
+  box-shadow: 5px 10px 10px rgb(91, 24, 24);
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  background-image: url(../images/cobtact.avif);
+  border-radius: 10px;
+  background-size: 100%;
+  opacity: 0.75;
+}
+.contacth {
+  padding: 30px;
+  font-size: 40px;
+  color: black;
+  box-shadow: 5px 5px 5px black;
+  font-weight: 900;
+}
+
+.icons {
+  font-weight: 1000;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 890px) {
+  .container .plates .grid-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)) !important;
+    grid-gap: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+  .header .container .links a {
+    color: yellow;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 5px 5px 5px whitesmoke;
+
+    justify-content: flex-end;
+  }
+  .header .container .text {
+    display: none;
+  }
+  .healthyplates {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    animation-name: none;
+  }
+  .grid-sections h2:nth-child(2) {
+    color: #a36ab6;
+
+    width: 300px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+
+    cursor: pointer;
+    animation-name: none;
+  }
+  .drinksimage {
+    width: 400px;
+    height: 300px;
+    box-shadow: 5px rgb(134, 243, 120);
+    box-shadow: 10px 5px 5px royalblue;
+    border-radius: 40px;
+    margin-top: 20px;
+    animation-name: none;
+  }
+  .slide {
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+
+    font-weight: bold;
+    color: #008080;
+    animation-name: none;
+  }
+  #health {
+    font-size: 50px;
+  }
+
+  /* .container .plates .fourthsection .fourthinfo {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    } */
+}
